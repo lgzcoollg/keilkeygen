@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 
-unsigned long GetTickCount()
+unsigned long GetTickCount2()
 {
 struct timespec ts;
 clock_gettime(CLOCK_MONOTONIC, &ts);
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
-	err = lic_make(lic, cid, dev_id, type_id, GetTickCount());
+	err = lic_make(lic, cid, dev_id, type_id, GetTickCount2());
 
 	switch (err) {
 	case 0: 

@@ -217,12 +217,12 @@ Please see the source code for more information.
 ## 4 Build and use in shell yourself:
 Build:
 ```
-gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c -o keygen
+gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c -static -o keilkeygen
 ```
 or use make easier
 
 ```
-make
+make all
 ```
 
 run for help:

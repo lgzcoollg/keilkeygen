@@ -1,4 +1,4 @@
-#gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c  -o keygen
+#gcc rand.c rdx36.c crypt.c mcid.c slicx.c main.c -static -o keilkeygen
 
 # Compiler
 CC = gcc
@@ -8,7 +8,7 @@ TARGET = keilkeygen
 
 # Default rule to build the target
 all: 
-	$(CC) *.c -o $(TARGET) 
+	$(CC) *.c -static -o $(TARGET) 
 
 # Clean rule to remove object files and executable
 clean:
